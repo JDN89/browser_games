@@ -67,7 +67,7 @@ function moveSnake() {
   //same as rij * COLS + col [0] to get x coordinate
   const tailX = cellPositions[tail[0] * COLS + tail[1]][0];
   const tailY = cellPositions[tail[0] * COLS + tail[1]][1];
-  ctx.clearRect(tailX, tailY, CELL_SIZE, CELL_SIZE);
+  ctx.clearRect(tailX, tailY, CELL_SIZE-1, CELL_SIZE-1);
   drawSnake(snakePosition);
 }
 
