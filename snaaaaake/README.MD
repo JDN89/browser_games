@@ -1,3 +1,7 @@
+# TODO: implement linked list?
+# TODO: learn about linked lists in JS
+# look at game of life on how to get the index of the current position
+
 # General steps to create a snake game:
 
     Set up the HTML canvas: Create an HTML file and set up a canvas element using JavaScript.
