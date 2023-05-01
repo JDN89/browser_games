@@ -1,0 +1,43 @@
+# Node.js dependencies
+node_modules/
+
+# Compiled output
+dist/
+build/
+out/
+bin/
+
+# Logs and databases
+*.log
+*.sqlite
+*.sqlite3
+
+# IDE files
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+
+# Compiled binary files
+*.com
+*.class
+*.dll
+*.exe
+*.o
+*.so
+
+# Mac-specific files
+.DS_Store
+._*
+
+# Build artifacts
+*.d.ts
+*.js.map
+*.js.map.gz
+
+# Cache and testing directories
+.cache/
+.tmp/
+coverage/
