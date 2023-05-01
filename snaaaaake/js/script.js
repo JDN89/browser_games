@@ -1,6 +1,6 @@
 const CELL_SIZE = 20;
-const ROWS = 12;
-const COLS = 12;
+const ROWS = 14;
+const COLS = 14;
 const PADDING = 5;
 
 const canvas = document.getElementById('my-canvas');
@@ -54,7 +54,6 @@ function drawSnake(snake) {
     // = coll to add the current col pos
     const x = cellPositions[row * COLS + col][0]; // pos x or 0 [x,y]
     const y = cellPositions[row * COLS + col][1]; // pos y or 1
-    console.log(y)
     ctx.fillStyle = 'green';
     ctx.fillRect(x, y, CELL_SIZE, CELL_SIZE);
   });
@@ -65,10 +64,10 @@ function moveSnake() {
   const newHead = [head[0] + 1, head[1]];
   snakePosition.push(newHead);
   const tail = snakePosition.shift();
+  //same as rij * COLS + col [0] to get x coordinate
   const tailX = cellPositions[tail[0] * COLS + tail[1]][0];
   const tailY = cellPositions[tail[0] * COLS + tail[1]][1];
-  ctx.fillStyle = 'red';
-  ctx.fillRect(tailX, tailY, CELL_SIZE, CELL_SIZE);
+  ctx.clearRect(tailX, tailY, CELL_SIZE, CELL_SIZE);
   drawSnake(snakePosition);
 }
 
